@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>First java script</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML=Date()"> click me to display date and time</button>
+    <p id="demo"></p>
+    <br>
+    <br>
+    <br>
+    <h2>What Java script can do</h2>
+    <div style="display: flex; align-items:flex-end;">
+    
+   <button id="offBtn" style="height:50%;" type="button" onclick="document.getElementById('offBtn').style.fontSize='10px';document.getElementById('bulbImage').src='../Assets/alpha3.png'">
+turn off the light</button>
+
+
+ <br>
+<img id="bulbImage"  src="../Assets/alpha3.png">
+<button style="height:50%;" type="button" onclick="document.getElementById('bulbImage').src='../Assets/bulbOn.png'"> Turn on the Light</button>
+<!-- <img id =" bulboffImage" src="../Assets/bulbOn.png" alt=""> -->
+ 
+</div>
+    </body>
+</html>
