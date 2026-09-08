@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.mycontainer div {
+            width: 33%;
+            float: left;
+        }
+        div.mycontainer_inline div{
+             width: 32%;
+             display:inLine-block;
+             padding: 5px;
+             margin: 1px;
+        }
+      .mycontainer_Flex {
+            display:flex;
+        }
+       .mycontainer_Flex > div{
+            padding:5px;
+            width: 32%;
+        }
+        .flexDiv3{
+            display:flex;
+            flex-direction: column;
+        }
+        .flexDiv3 .romeTitle{
+            text-align:center;
+        }
+        .flexDiv3 .romeParas{
+            display:flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h2> Multiple div Element</h2>
+    <div style ="background-color:#FFF4A3;">
+        <h1>London</h1>
+        <p>Oslo is the capital city of Norway.</p>
+        <p>Oslo is the capital city of Norway.</p>
+    </div>
+    <div style="background-color:#e0d26c;">
+        <h1>Oslo</h1>
+        <p>Oslo is the capital city of Norway.</p>
+        <p>Oslo is the capital city of Norway.</p>
+    </div>
+    <div style="background-color:#f6c5f0">
+        <h1>Rome</h1>
+        <p>Oslo is the capital city of Norway.</p>
+        <p>Oslo is the capital city of Norway.</p>
+    </div>
+    <p> dive use float for making horizontal shift</p>
+
+    <h2> Multiple div Element (side by side using mycontainer)</h2>
+    <div class="mycontainer">
+        <div style ="background-color:#FFF4A3;">
+            <h1>London</h1>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo is the capital city of Norway.</p>
+        </div>
+        <div style="background-color:#e0d26c;">
+            <h1>Oslo</h1>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo is the capital city of Norway.</p>
+        </div>
+        <div style="background-color:#f6c5f0">
+            <h1>Rome</h1>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo is the capital city of Norway.</p>
+        </div>
+        <br>
+        <br>
+    </div>
+    <h2>Inline block</h2>
+        <div class="mycontainer_inline">
+        <div style ="background-color:#FFF4A3;">
+            <h1>London</h1>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo is the capital city of Norway.</p>
+        </div>
+        <div style="background-color:#e0d26c;">
+            <h1>Oslo</h1>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo is the capital city of Norway.</p>
+        </div>
+        <div style="background-color:#f6c5f0">
+            <h1>Rome</h1>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo is the capital city of Norway.</p>
+        </div>
+    </div>
+    <h3>Display Flex</h3>
+     <br>
+        <br>
+    </div>
+        <div class="mycontainer_Flex">
+        <div style ="background-color:#FFF4A3;">
+            <h1>London</h1>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo is the capital city of Norway.</p>
+        </div>
+        <div style="background-color:#e0d26c;">
+            <h1>Oslo</h1>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo is the capital city of Norway.</p>
+        </div>
+        <div class="flexDiv3" style="background-color:#f6c5f0">
+            <div class="romeTitle">
+                <h1>Rome</h1>
+            </div>
+            <div class="romeParas">
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo is the capital city of Norway.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
